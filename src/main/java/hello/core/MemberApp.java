@@ -1,4 +1,4 @@
-package hello.core.order;
+package hello.core;
 
 import hello.core.member.Grade;
 import hello.core.member.Member;
@@ -10,9 +10,10 @@ public class MemberApp {
         MemberService memberService = new MemberServiceImpl();
         Member member = new Member(1L, "MemberA", Grade.VIP);
         memberService.join(member);
+
         Member findMember = memberService.findMember(1L);
         System.out.println("new member = " + member.getName());
-        System.out.println("findMember = " + findMember.getName());
+        System.out.println("find Member = " + findMember.getName());
 
     }
 }
