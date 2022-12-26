@@ -1,4 +1,4 @@
-package hello.core;
+package hello.core.member;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
