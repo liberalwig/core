@@ -16,7 +16,7 @@ public class ApplicationContextInfoTest {
         String[] beanDefinitionNames = ac.getBeanDefinitionNames();
         for (String beanDefinitionName : beanDefinitionNames) {
             Object bean = ac.getBean(beanDefinitionName);
-            System.out.println("name = " + beanDefinitionName + " object = " + bean); // bean 이 key, soutv 부분이 value
+            System.out.println("name = " + beanDefinitionName + " / object = " + bean); // bean 이 key, soutv 부분이 value
         }
     }
     @Test
