@@ -59,5 +59,6 @@ public class SingletonTest {
 
         // memberService != memberService2
         Assertions.assertThat(memberService1).isSameAs(memberService2);
+
     }
 }
