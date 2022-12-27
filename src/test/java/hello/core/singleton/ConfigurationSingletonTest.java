@@ -43,5 +43,6 @@ public class ConfigurationSingletonTest {
 
         System.out.println("bean = " + bean.getClass()); // 로그 결과 : $$EnhancerBySpringCGLIB$$ef158056
         // AppConfig 를 상속한 AppConfig@CGLIB 빈이 바이트코드를 조작해 등록되고 반복적으로 소환됨 -> 싱글톤 보장
+        // AppConfig.java 에서 @Configuration 을 주석 처리할 경우, 순수하게 new 가 호출 되어 싱글톤을 저해함
     }
 }
